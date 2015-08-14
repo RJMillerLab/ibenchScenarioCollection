@@ -22,7 +22,7 @@ These are a bunch of configuration files that were used in an scalability evalua
 
 | Parameter     | Value  |
 | :------------ |:-------------:|
-| Directoy      | `configs/2015-08-iBench-Eval` |
+| Directoy      | `configs/2015-08-MapMerge-Clio-Spicy` |
 | Number of Configurations | 0 |
 | External Description | [http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf](http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf) |
 
@@ -31,3 +31,22 @@ These are a bunch of configuration files that were used in an scalability evalua
 # Available XML Integration Scenarios
 
 ## Join + Fusion
+
+| Parameter     | Value  |
+| :------------ |:-------------:|
+| Directoy      | `udp/join_fusion` |
+| Includes Instance Data | No |
+| UPD-ready | Yes |
+| External Description | [http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf](http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf) |
+| Wiki-Link | [] |
+
+This integration scenario contains three tables in the source: 
+
+`Person(name,age)`, `Address(occupant,zip)`, `Place(occupant,city)`
+
+where `occupant` in both `Address` and `Place` is a foreign key to `Person` which has PK `name`. These tables are mapped to a single target table:
+
+`LivesAt(name,zip,city)`
+
+
+
