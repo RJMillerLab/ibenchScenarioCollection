@@ -1,0 +1,69 @@
+# Configuration File Config-3d for iBench
+# Scalability Run for 100K Attributes and 25% Source Reuse (with 50% NoReuseScenPerc)
+
+# Output Path Prefixes
+SchemaPathPrefix=out0
+InstancePathPrefix=out0
+
+# Number of Instances for each Basic Scenario Type
+Scenarios.COPY = 250
+Scenarios.HORIZPARTITION = 300
+Scenarios.SURROGATEKEY = 600
+Scenarios.MERGING = 500
+Scenarios.FUSION = 0
+Scenarios.SELFJOINS = 0
+Scenarios.VERTPARTITION = 250
+Scenarios.ADDATTRIBUTE = 250
+Scenarios.DELATTRIBUTE = 250
+Scenarios.ADDDELATTRIBUTE = 250
+Scenarios.VERTPARTITIONISA = 0
+Scenarios.VERTPARTITIONHASA = 500
+Scenarios.VERTPARTITIONNTOM = 250
+Scenarios.MERGEADD = 250
+Scenarios.VERTPARTITIONISAAUTHORITY = 0
+
+
+# Parameters that define the shape of the schema and basic scenarios
+ConfigOptions.NumOfSubElements = 10
+ConfigOptions.NumOfNewAttributes = 3
+ConfigOptions.NumOfAttributesToDelete = 3
+ConfigOptions.JoinSize = 3
+ConfigOptions.NumOfParamsInFunctions = 3
+ConfigOptions.JoinKind = 1 
+ConfigOptions.SkolemKind = 1
+ConfigOptions.SourceFDPerc = 0
+ConfigOptions.PrimaryKeyFDs = 0
+ConfigOptions.NestingDepth = 0
+ConfigOptions.ReuseSourcePerc = 25
+ConfigOptions.NoReuseScenPerc = 50
+ConfigOptions.VPAuthorityComplexity = 9
+
+# Deviations for each of the parameters
+ConfigOptionsDeviation.NumOfSubElements = 5
+ConfigOptionsDeviation.NumOfNewAttributes = 1
+ConfigOptionsDeviation.NumOfAttributesToDelete = 1
+ConfigOptionsDeviation.JoinSize = 1
+ConfigOptionsDeviation.NumOfParamsInFunctions = 1
+ConfigOptionsDeviation.PrimaryKeySize = 1
+ConfigOptionsDeviation.NumOfJoinAttributes = 1
+ConfigOptionsDeviation.VPAuthorityComplexity = 7
+
+# Random number generator and max values, DataGenerator and MappingLang
+RandomSeed = 917289912
+RepElementCount = 1000
+MaxStringLength = 100
+MaxNumValue = 1000
+MappingLanguage = SOtgds
+
+# Optional activation/deactivation of output options
+OutputOption.HTMLSchemas = false
+OutputOption.Data = false
+OutputOption.XMLSchemas = false
+OutputOption.TrampXML = false
+OutputOption.Clio = false
+
+# Optional activation/deactivation of output parts of the Tramp XML document
+TrampXMLOutput.Correspondences = false
+TrampXMLOutput.Transformations = false
+TrampXMLOutput.Data = false
+TrampXMLOutput.FDs = true

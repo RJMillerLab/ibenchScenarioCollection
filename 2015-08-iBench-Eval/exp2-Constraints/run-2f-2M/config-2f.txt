@@ -1,0 +1,67 @@
+# Configuration File Config-2f for iBench
+# Scalability Run for 2M Attributes and 25% Random FDs Constraints
+
+# Output Path Prefixes
+SchemaPathPrefix=out0
+InstancePathPrefix=out0
+
+# Number of Instances for each Basic Scenario Type
+Scenarios.COPY = 5000
+Scenarios.HORIZPARTITION = 5000
+Scenarios.SURROGATEKEY = 5000
+Scenarios.MERGING = 5000
+Scenarios.FUSION = 5000
+Scenarios.SELFJOINS = 5000
+Scenarios.VERTPARTITION = 5000
+Scenarios.ADDATTRIBUTE = 5000
+Scenarios.DELATTRIBUTE = 5000
+Scenarios.ADDDELATTRIBUTE = 5000
+Scenarios.VERTPARTITIONISA = 5000
+Scenarios.VERTPARTITIONHASA = 5000
+Scenarios.VERTPARTITIONNTOM = 5000
+Scenarios.MERGEADD = 5000
+Scenarios.VERTPARTITIONISAAUTHORITY = 0
+
+
+# Parameters that define the shape of the schema and basic scenarios
+ConfigOptions.NumOfSubElements = 10
+ConfigOptions.NumOfNewAttributes = 3
+ConfigOptions.NumOfAttributesToDelete = 3
+ConfigOptions.JoinSize = 3
+ConfigOptions.NumOfParamsInFunctions = 3
+ConfigOptions.JoinKind = 1 
+ConfigOptions.SkolemKind = 1
+ConfigOptions.SourceFDPerc = 25
+ConfigOptions.PrimaryKeyFDs = 1
+ConfigOptions.NestingDepth = 0
+ConfigOptions.VPAuthorityComplexity = 9
+
+# Deviations for each of the parameters
+ConfigOptionsDeviation.NumOfSubElements = 5
+ConfigOptionsDeviation.NumOfNewAttributes = 1
+ConfigOptionsDeviation.NumOfAttributesToDelete = 1
+ConfigOptionsDeviation.JoinSize = 1
+ConfigOptionsDeviation.NumOfParamsInFunctions = 1
+ConfigOptionsDeviation.PrimaryKeySize = 1
+ConfigOptionsDeviation.NumOfJoinAttributes = 1
+ConfigOptionsDeviation.VPAuthorityComplexity = 7
+
+# Random number generator and max values, DataGenerator and MappingLang
+RandomSeed = 917289912
+RepElementCount = 1000
+MaxStringLength = 100
+MaxNumValue = 1000
+MappingLanguage = SOtgds
+
+# Optional activation/deactivation of output options
+OutputOption.HTMLSchemas = false
+OutputOption.Data = false
+OutputOption.XMLSchemas = false
+OutputOption.TrampXML = false
+OutputOption.Clio = false
+
+# Optional activation/deactivation of output parts of the Tramp XML document
+TrampXMLOutput.Correspondences = false
+TrampXMLOutput.Transformations = false
+TrampXMLOutput.Data = false
+TrampXMLOutput.FDs = true

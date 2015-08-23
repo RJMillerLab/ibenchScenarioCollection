@@ -1,0 +1,65 @@
+# Configuration File Config-1b for iBench
+# Scalability Run for 1K Attributes and Plain Features (0% Reuse, 0% Constraints and 0% Sk Noise)
+
+# Output Path Prefixes
+SchemaPathPrefix=out0
+InstancePathPrefix=out0
+
+# Number of Instances for each Basic Scenario Type
+Scenarios.COPY = 3
+Scenarios.HORIZPARTITION = 3
+Scenarios.SURROGATEKEY = 3
+Scenarios.MERGING = 3
+Scenarios.FUSION = 3
+Scenarios.SELFJOINS = 3
+Scenarios.VERTPARTITION = 3
+Scenarios.ADDATTRIBUTE = 3
+Scenarios.DELATTRIBUTE = 3
+Scenarios.ADDDELATTRIBUTE = 3
+Scenarios.VERTPARTITIONISA = 3
+Scenarios.VERTPARTITIONHASA = 3
+Scenarios.VERTPARTITIONNTOM = 3
+Scenarios.MERGEADD = 3
+Scenarios.VERTPARTITIONISAAUTHORITY = 0
+
+
+# Parameters that define the shape of the schema and basic scenarios
+ConfigOptions.NumOfSubElements = 10
+ConfigOptions.NumOfNewAttributes = 3
+ConfigOptions.NumOfAttributesToDelete = 3
+ConfigOptions.JoinSize = 3
+ConfigOptions.NumOfParamsInFunctions = 3
+ConfigOptions.JoinKind = 1 
+ConfigOptions.SkolemKind = 1
+ConfigOptions.SourceFDPerc = 0
+ConfigOptions.PrimaryKeyFDs = 0
+ConfigOptions.NestingDepth = 0
+ConfigOptions.VPAuthorityComplexity = 10
+
+# Deviations for each of the parameters
+ConfigOptionsDeviation.NumOfSubElements = 5
+ConfigOptionsDeviation.NumOfNewAttributes = 1
+ConfigOptionsDeviation.NumOfAttributesToDelete = 1
+ConfigOptionsDeviation.JoinSize = 1
+ConfigOptionsDeviation.NumOfParamsInFunctions = 1
+ConfigOptionsDeviation.PrimaryKeySize = 1
+ConfigOptionsDeviation.NumOfJoinAttributes = 1
+
+# Random number generator and max values, DataGenerator and MappingLang
+RandomSeed = 917289912
+RepElementCount = 1000
+MaxStringLength = 100
+MaxNumValue = 1000
+MappingLanguage = SOtgds
+
+# Optional activation/deactivation of output options
+OutputOption.HTMLSchemas = false
+OutputOption.Data = false
+OutputOption.XMLSchemas = false
+OutputOption.Clio = false
+
+# Optional activation/deactivation of output parts of the Tramp XML document
+TrampXMLOutput.Correspondences = false
+TrampXMLOutput.Transformations = false
+TrampXMLOutput.Data = false
+TrampXMLOutput.FDs = true
