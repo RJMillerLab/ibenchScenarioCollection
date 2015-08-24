@@ -13,7 +13,7 @@ If you upload your own iBench configuration file or scenario XML document, we ki
 | Parameter     | Value  |
 | :------------ |:-------------:|
 | Directoy      | `configs/2015-08-iBench-Eval` |
-| Number of Configurations | 0 |
+| Number of Configurations | 24 |
 | External Description | [http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf](http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf) |
 
 These are a bunch of configuration files that were used in an scalability evaluation of *iBench* described in the following technical report [http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf](http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf).
@@ -23,7 +23,7 @@ These are a bunch of configuration files that were used in an scalability evalua
 | Parameter     | Value  |
 | :------------ |:-------------:|
 | Directoy      | `configs/2015-08-MapMerge-Clio-Spicy` |
-| Number of Configurations | 0 |
+| Number of Configurations | 34 |
 | External Description | [http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf](http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf) |
 
 These are a bunch of configuration files that were used in an scalability evaluation of *iBench* described in the following technical report [http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf](http://dblab.cs.toronto.edu/project/iBench/docs/iBench-TR-2015.pdf).
