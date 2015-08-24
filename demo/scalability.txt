@@ -1,0 +1,29 @@
+# Configuration File for iBench
+
+# Output Path Prefixes
+SchemaPathPrefix=out0
+InstancePathPrefix=out0
+
+# Subset of Primitives
+Scenarios.COPY = 1000
+Scenarios.ADDATTRIBUTE = 1000
+Scenarios.ADDDELATTRIBUTE = 1000
+Scenarios.HORIZPARTITION = 1000
+Scenarios.VERTPARTITION = 1000
+Scenarios.VERTPARTITIONHASA = 1000
+Scenarios.VERTPARTITIONNTOM = 1000
+Scenarios.VERTPARTITIONISAAUTHORITY = 1000
+
+#MappingLanguage = SOtgds
+#ConfigOptions.SkolemKind = 0
+#RepElementCount = 100
+
+# Output and Tramp options
+OutputOption.HTMLSchemas = false
+OutputOption.Data = false
+OutputOption.XMLSchemas = false
+OutputOption.Clio = false
+TrampXMLOutput.FDs = false
+TrampXMLOutput.Correspondences = false
+TrampXMLOutput.Transformations = false
+TrampXMLOutput.Data = false
