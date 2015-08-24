@@ -13,11 +13,11 @@ If you upload your own iBench configuration file or scenario XML document, we ki
 | Description     | File  |
 | :------------ |:-------------:|
 | Primitives and Tramp Options      | `demo/primitives-tramp.txt` |
-| Scalability of the iBench Generator     | `demo/scalability.txt` |
 | UDP Person & Address     | `demo/udp-person-address.txt` |
-| UDP Amalgam     | `demo/udp-amalgam.txt` |
 | UDP Flight & Hotel     | `demo/udp-fh.txt` |
+| UDP Amalgam     | `demo/udp-amalgam.txt` |
 | Ontology Scenario - Target Sharing     | `demo/ontology-target-sharing.txt` |
+| Scalability of the iBench Generator     | `demo/scalability.txt` |
 | Complete Backup Configuration File     | `demo/backup.txt` |
 
 These are a bunch of configuration files that we used to demonstrate *iBench* in VLDB'15.
