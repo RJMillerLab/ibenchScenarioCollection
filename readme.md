@@ -8,6 +8,20 @@ If you upload your own iBench configuration file or scenario XML document, we ki
 
 # Available Configurations
 
+## VLDB Demo Configurations
+
+| Description     | File  |
+| :------------ |:-------------:|
+| Primitives and Tramp options      | `demo/primitives-tramp.txt` |
+| Scalability of the iBench Generator     | `demo/scalability.txt` |
+| UDP Person & Address     | `demo/udp-person-address.txt` |
+| UDP Amalgam     | `demo/udp-amalgam.txt` |
+| UDP Flight & Hotel     | `demo/udp-fh.txt` |
+| Ontology Scenario - Target Sharing     | `demo/ontology-target-sharing.txt` |
+| Complete Backup Configuration File     | `demo/backup.txt` |
+
+These are a bunch of configuration files that we used to demonstrate *iBench* in VLDB'15.
+
 ## iBench Scalability Evaluation
 
 | Parameter     | Value  |
@@ -47,6 +61,3 @@ This integration scenario contains three tables in the source:
 where `occupant` in both `Address` and `Place` is a foreign key to `Person` which has PK `name`. These tables are mapped to a single target table:
 
 `LivesAt(name,zip,city)`
-
-
-
