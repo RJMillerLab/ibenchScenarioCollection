@@ -1,0 +1,62 @@
+# Configuration File for iBench
+
+# Output Path Prefixes
+SchemaPathPrefix=out0
+InstancePathPrefix=out0
+
+# Number of Instances for each Basic Scenario Type
+Scenarios.COPY = 0
+Scenarios.HORIZPARTITION = 0
+Scenarios.SURROGATEKEY = 0
+Scenarios.MERGING = 0
+Scenarios.FUSION = 0
+Scenarios.SELFJOINS = 0
+Scenarios.VERTPARTITION = 0
+Scenarios.ADDATTRIBUTE = 10
+Scenarios.DELATTRIBUTE = 0
+Scenarios.ADDDELATTRIBUTE = 0
+Scenarios.VERTPARTITIONISA = 10
+Scenarios.VERTPARTITIONHASA = 10
+Scenarios.VERTPARTITIONNTOM = 10
+Scenarios.MERGEADD = 0
+Scenarios.VERTPARTITIONISAAUTHORITY = 0
+
+
+# Parameters that define the shape of the schema and basic scenarios
+ConfigOptions.NumOfSubElements = 5
+ConfigOptions.NumOfNewAttributes = 1
+ConfigOptions.JoinSize = 1
+ConfigOptions.NumOfParamsInFunctions = 1
+ConfigOptions.PrimaryKeySize = 1
+ConfigOptions.SkolemKind = 1
+ConfigOptions.SourceFDPerc = 0
+ConfigOptions.NestingDepth = 0
+ConfigOptions.SourceInclusionDependencyPerc = 10
+ConfigOptions.SourceInclusionDependencyFKPerc = 10
+ConfigOptions.TargetInclusionDependencyPerc = 10
+ConfigOptions.TargetInclusionDependencyFKPerc = 10
+ConfigOptions.SourceCircularInclusionDependency = 1
+ConfigOptions.SourceCircularFK = 1
+ConfigOptions.TargetCircularInclusionDependency = 1
+ConfigOptions.TargetCircularFK = 1
+
+# Deviations for each of the parameters
+ConfigOptionsDeviation.NumOfSubElements = 2
+
+# Random number generator and max values, DataGenerator and MappingLang
+RandomSeed = 9
+RepElementCount = 1000
+MaxStringLength = 100
+MaxNumValue = 1000
+MappingLanguage = SOtgds
+
+# Optional activation/deactivation of output options
+OutputOption.HTMLSchemas = false
+OutputOption.Data = true
+OutputOption.XMLSchemas = false
+
+# Optional activation/deactivation of output parts of the Tramp XML document
+TrampXMLOutput.Correspondences = true
+TrampXMLOutput.Transformations = true
+TrampXMLOutput.Data = true
+TrampXMLOutput.FDs = true
