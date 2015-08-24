@@ -12,7 +12,7 @@ If you upload your own iBench configuration file or scenario XML document, we ki
 
 | Description     | File  |
 | :------------ |:-------------:|
-| Primitives and Tramp options      | `demo/primitives-tramp.txt` |
+| Primitives and Tramp Options      | `demo/primitives-tramp.txt` |
 | Scalability of the iBench Generator     | `demo/scalability.txt` |
 | UDP Person & Address     | `demo/udp-person-address.txt` |
 | UDP Amalgam     | `demo/udp-amalgam.txt` |
