@@ -4,7 +4,7 @@ This is a public project used as a central repository for configuration files fo
 
 # Instructions
 
-If you upload your own iBench configuration file or scenario XML document, we kindly ask you to add a section to the bottom of this document describing location and characteristics of the file(s) and potentially its purpose, i.e., what evaluation you were using the generated metadata for.
+If you upload your own iBench configuration file or scenario XML document, we kindly ask you to add a section to the bottom of this document describing location and characteristics of the file(s) and potentially its purpose, i.e., what evaluation you were using the generated metadata for. Optionally, you can add a more detailed description to the Wiki.
 
 # Getting Started
 
@@ -55,9 +55,28 @@ This part of the repository contains real world and synthetic integration scenar
 
 ## Amalgam ##
 
-**Repository Location:** `realworld/amalgam`
+| Parameter     | Value  |
+| :------------ |:-------------:|
+| Directoy      | `realworld/amalgam` |
+| Includes Instance Data | No |
+| UPD-ready | Yes |
+| External Description | [http://dblab.cs.toronto.edu/~miller/amalgam/](http://dblab.cs.toronto.edu/~miller/amalgam/) |
+| Wiki-Link | [] |
 
-This collection contains some of the schemas of the Amalgam data integration test suite [http://dblab.cs.toronto.edu/~miller/amalgam/](http://dblab.cs.toronto.edu/~miller/amalgam/) and mappings between these schemas.
+This collection contains some of the schemas of the Amalgam data integration test suite [http://dblab.cs.toronto.edu/~miller/amalgam/](http://dblab.cs.toronto.edu/~miller/amalgam/) and mappings between these schemas. It was used in the evaluation of a SO tgd to FO mapping translator [Value Invention in Data Exchange](http://dblab.cs.toronto.edu/~prg/docs/arocena-sigmod13.pdf).
+
+## Biological Schemas ##
+
+| Parameter     | Value  |
+| :------------ |:-------------:|
+| Directoy      | `realworld/BIO` |
+| Directoy      | `realworld/SDB` |
+| Includes Instance Data | No |
+| UPD-ready | Yes |
+| External Description |  |
+| Wiki-Link | [] |
+
+These scenarios have also been used in the evaluation of the SO tgd to FO mapping translator presented at SIGMOD 13: [Value Invention in Data Exchange](http://dblab.cs.toronto.edu/~prg/docs/arocena-sigmod13.pdf). The scenarios have been introduced and described in an evaluation of [MapMerge](http://link.springer.com/article/10.1007%2Fs00778-012-0264-z).
 
 
 ## Join + Fusion
