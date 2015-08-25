@@ -1,0 +1,42 @@
+# Ontology Scenario - Target Sharing
+
+# Output Path Prefixes
+SchemaPathPrefix=out0
+InstancePathPrefix=out0
+
+# Number of Instances for each Ontology Primitive
+Scenarios.ADDATTRIBUTE = 10
+Scenarios.VERTPARTITIONISA = 10
+Scenarios.VERTPARTITIONHASA = 10
+Scenarios.VERTPARTITIONNTOM = 10
+
+# Parameters that define the shape of the schema
+ConfigOptions.NumOfSubElements = 5
+ConfigOptionsDeviation.NumOfSubElements = 2
+ConfigOptions.NumOfNewAttributes = 1
+ConfigOptions.PrimaryKeySize = 1
+ConfigOptions.NumOfJoinAttributes = 1
+ConfigOptions.SkolemKind = 1
+ConfigOptions.SourceFDPerc = 0
+ConfigOptions.ReuseSourcePerc = 25
+ConfigOptions.ReuseTargetPerc = 25
+ConfigOptions.NoReuseScenPerc = 60
+
+# Random number generator and max values, DataGenerator and MappingLang
+RandomSeed = 601
+RepElementCount = 100
+MaxStringLength = 100
+MaxNumValue = 1000
+MappingLanguage = SOtgds
+
+# Optional activation/deactivation of output options
+OutputOption.Data = true
+OutputOption.XMLSchemas = true
+OutputOption.TrampXML = true
+OutputOption.Clio = true
+
+# Optional activation/deactivation of output parts of the Tramp XML document
+TrampXMLOutput.Correspondences = true
+TrampXMLOutput.Transformations = true
+TrampXMLOutput.Data = true
+TrampXMLOutput.FDs = true

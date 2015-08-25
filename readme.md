@@ -23,7 +23,7 @@ This is a collection of configuration files that can be used to create scenarios
 | UDP Person & Address     | `demo/udp-person-address.txt` |
 | UDP Flight & Hotel     | `demo/udp-fh.txt` |
 | UDP Amalgam     | `demo/udp-amalgam.txt` |
-| Ontology Scenario - Target Sharing     | `demo/ontology-target-sharing.txt` |
+| Ontology Scenario - Target Sharing (together with input/output files for Clio/MapMerge/Spicy)    | `demo/ontology-target-sharing` |
 | Scalability of the iBench Generator     | `demo/scalability.txt` |
 | Complete Backup Configuration File     | `demo/backup.txt` |
 
