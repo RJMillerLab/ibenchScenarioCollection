@@ -1,6 +1,6 @@
 # iBench Community Integration Scenario and Configuration Repository #
 
-This is a public project used as a central repository for configuration files for the [https://bitbucket.org/ibencher/ibench](iBench) metadata generator and integration scenarios in the format supported by iBench. This repository is meant to ease sharing of metadata used for evaluating data integration systems.
+This is a public project used as a central repository for configuration files for the [https://github.com/RJMillerLab/ibench](iBench) metadata generator and integration scenarios in the format supported by iBench. This repository is meant to ease sharing of metadata used for evaluating data integration systems.
 
 # Instructions
 
@@ -8,7 +8,7 @@ If you upload your own iBench configuration file or scenario XML document, we ki
 
 # Getting Started
 
-You need **iBench** ([https://bitbucket.org/ibencher/ibench](https://bitbucket.org/ibencher/ibench)) to generate metadata and data based on the configuration files in this repository. The tool can also be used to load schemas and data into a Postgres database and validate manually generated scenario XML files.
+You need **iBench** ([https://github.com/RJMillerLab/ibench](https://bitbucket.org/ibencher/ibench)) to generate metadata and data based on the configuration files in this repository. The tool can also be used to load schemas and data into a Postgres database and validate manually generated scenario XML files.
 
 # Available XML Configuration Files
 
