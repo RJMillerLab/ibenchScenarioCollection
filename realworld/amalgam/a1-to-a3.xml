@@ -282,8 +282,8 @@
 <!--  ****************** Foreign Keys ************************** -->	
 
 		<ForeignKey id="AAtoarticle">
-			<From tableref="articleauthor"><Attr>bookid</Attr></From>
-			<To tableref="tarticle"><Attr>bookid</Attr></To>
+			<From tableref="articleauthor"><Attr>articleid</Attr></From>
+			<To tableref="tarticle"><Attr>articleid</Attr></To>
 		</ForeignKey>
 		<ForeignKey id="AAtoauthor">
 			<From tableref="articleauthor"><Attr>authorid</Attr></From>
